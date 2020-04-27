@@ -1,0 +1,15 @@
+{
+  "name": "clarinetlessons",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "node server/main.js",
+    "dev": "nodemon server/main.js"
+  },
+  "author": "Joshua Moses",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
