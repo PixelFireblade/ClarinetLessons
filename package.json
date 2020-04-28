@@ -4,12 +4,22 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "node server/main.js",
-    "dev": "nodemon server/main.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PixelFireblade/ClarinetLessons.git"
   },
   "author": "Joshua Moses",
   "license": "ISC",
-  "devDependencies": {
-    "nodemon": "^2.0.3"
+  "bugs": {
+    "url": "https://github.com/PixelFireblade/ClarinetLessons/issues"
+  },
+  "homepage": "https://github.com/PixelFireblade/ClarinetLessons#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "googleapis": "^39.2.0",
+    "ics": "^2.19.0",
+    "wait-on": "^4.0.2"
   }
 }
