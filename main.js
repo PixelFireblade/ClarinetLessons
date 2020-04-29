@@ -10,7 +10,11 @@ const {
 const ics = require('ics');
 
 const app = express();
-let done = false;
+
+app.use(express.static('public'));
+
+app.listen(process.env.PORT || 8080, () => console.log("Port used"));
+
 app.get('/', function (req, res){
   res.sendFile(`${__dirname}/download.html`);
 })
@@ -36,7 +40,6 @@ app.get('/download', function(req, res){
       if (err) throw err;
       const file = `${__dirname}/event.ics`;
       res.download(file);
-      done = true;
     
     });
 
@@ -47,7 +50,7 @@ app.get('/download', function(req, res){
 });
 
 
-app.listen(5000);
+
 const year = 2020;
 // If modifying these scopes, delete token.json.
 const SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly'];
