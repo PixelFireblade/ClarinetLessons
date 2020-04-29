@@ -13,7 +13,7 @@ const app = express();
 
 app.use(express.static('public'));
 
-app.listen(process.env.PORT || 8080, () => console.log("Port used"));
+app.listen(process.env.PORT || 8080, () => console.log("Port used: "));
 
 app.get('/', function (req, res){
   res.sendFile(`${__dirname}/download.html`);
@@ -156,6 +156,8 @@ function listMajors(auth, name) {
     }
   });
 
+  
+
 
 }
 
@@ -244,8 +246,9 @@ function parseTimes(rows) {
     }
     finalTable.push(tempDay);
   }
-  // console.log(finalTable)
+  console.log(finalTable)
   return finalTable;
+
 
 }
 
@@ -304,5 +307,6 @@ function parseEvents(name, times) {
     };
     events.push(tempEvent);
   }
+  
   return events;
 }
