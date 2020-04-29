@@ -246,7 +246,7 @@ function parseTimes(rows) {
     }
     finalTable.push(tempDay);
   }
-  console.log(finalTable)
+  console.log(finalTable);
   return finalTable;
 
 
@@ -303,7 +303,7 @@ function parseEvents(name, times) {
       start: [year, parseInt(relevant[x].month), parseInt(relevant[x].day), parseInt(relevant[x].time.slice(0,2)), parseInt(relevant[x].time.slice(2,4))],
       duration: {hours: 0, minutes: 30},
       title: 'Clarinet Lesson',
-      description: 'Clarinet Lesson with Max Harris',
+      description: 'Clarinet Lesson with Max Harris'
     };
     events.push(tempEvent);
   }
